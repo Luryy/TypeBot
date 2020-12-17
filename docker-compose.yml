@@ -1,0 +1,18 @@
+version: '3'
+services:
+  node:
+    container_name: type_bot
+    build:
+      dockerfile: ./Dockerfile
+      context: .
+    depends_on:
+      - postgresdb
+    ports:
+      - 3333:3333
+  postgresdb:
+    container_name: postgres_bot
+    image: postgres
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_PASSWORD: docker
