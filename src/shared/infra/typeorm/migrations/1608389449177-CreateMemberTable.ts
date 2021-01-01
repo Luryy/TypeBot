@@ -22,10 +22,12 @@ export default class CreateMemberTable1608389449177
           {
             name: 'alias',
             type: 'varchar',
+            isUnique: true,
           },
           {
             name: 'email',
             type: 'varchar',
+            isUnique: true,
           },
           {
             name: 'password',
@@ -34,6 +36,7 @@ export default class CreateMemberTable1608389449177
           {
             name: 'telegram_chat_id',
             type: 'varchar',
+            isUnique: true,
           },
           {
             name: 'enterprise_id',
