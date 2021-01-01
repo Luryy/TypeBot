@@ -1,5 +1,7 @@
 import http from 'http';
 
+import '../typeorm';
+
 const port = process.env.PORT || 3000;
 
 http
